@@ -12,6 +12,7 @@
 		CD10093121B574DF00DE7A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD10092F21B574DF00DE7A30 /* Main.storyboard */; };
 		CD10093321B574E400DE7A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10093221B574E400DE7A30 /* Assets.xcassets */; };
 		CD10093621B574E400DE7A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD10093421B574E400DE7A30 /* LaunchScreen.storyboard */; };
+		CDECF36C21B9413100071801 /* ChoixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECF36B21B9413100071801 /* ChoixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CD10093221B574E400DE7A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD10093521B574E400DE7A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD10093721B574E400DE7A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDECF36B21B9413100071801 /* ChoixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoixViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				CD10092B21B574DF00DE7A30 /* AppDelegate.swift */,
 				CD10092D21B574DF00DE7A30 /* ViewController.swift */,
+				CDECF36B21B9413100071801 /* ChoixViewController.swift */,
 				CD10092F21B574DF00DE7A30 /* Main.storyboard */,
 				CD10093221B574E400DE7A30 /* Assets.xcassets */,
 				CD10093421B574E400DE7A30 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD10092E21B574DF00DE7A30 /* ViewController.swift in Sources */,
+				CDECF36C21B9413100071801 /* ChoixViewController.swift in Sources */,
 				CD10092C21B574DF00DE7A30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

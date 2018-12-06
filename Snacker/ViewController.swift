@@ -8,13 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+   
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.textField.delegate = self
+    
     }
-
+    
+    // Passer les Données à travers un View Controller
+    @IBAction func showMyNumberButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "showMyNumber", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMyNumber"{
+        let VCDestination = segue.destination as! ChoixViewController
+        VCDestination.myNumber = nameTextField.text!
+        }
+    }
+    
+    // Masquer le clavier
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return (true)
+    }
 
 }
 
