@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0069A721B9E0220041A9F8 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0069A621B9E0220041A9F8 /* Page2ViewController.swift */; };
 		CD10092C21B574DF00DE7A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10092B21B574DF00DE7A30 /* AppDelegate.swift */; };
 		CD10092E21B574DF00DE7A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10092D21B574DF00DE7A30 /* ViewController.swift */; };
 		CD10093121B574DF00DE7A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD10092F21B574DF00DE7A30 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD0069A621B9E0220041A9F8 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		CD10092821B574DF00DE7A30 /* Snacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD10092B21B574DF00DE7A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD10092D21B574DF00DE7A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CD10092B21B574DF00DE7A30 /* AppDelegate.swift */,
+				CD0069A621B9E0220041A9F8 /* Page2ViewController.swift */,
 				CD10092D21B574DF00DE7A30 /* ViewController.swift */,
 				CDECF36B21B9413100071801 /* ChoixViewController.swift */,
 				CD10092F21B574DF00DE7A30 /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				CD10092E21B574DF00DE7A30 /* ViewController.swift in Sources */,
 				CDECF36C21B9413100071801 /* ChoixViewController.swift in Sources */,
+				CD0069A721B9E0220041A9F8 /* Page2ViewController.swift in Sources */,
 				CD10092C21B574DF00DE7A30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
