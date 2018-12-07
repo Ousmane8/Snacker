@@ -9,14 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
-   
-    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+   // View Controller
+    @IBOutlet weak var nameButton: UIButton!
+    
+    // Clavier
     @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textField.delegate = self
-    
+        textField?.delegate = self
+        nameButton?.isUserInteractionEnabled = false
+        nameButton?.alpha = 0.5
     }
     
     // Passer les Données à travers un View Controller
@@ -27,8 +33,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showMyNumber"{
         let VCDestination = segue.destination as! ChoixViewController
-        VCDestination.myNumber = nameTextField.text!
+        VCDestination.myNumber = textField.text!
         }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+        if !text.isEmpty{
+            nameButton?.isUserInteractionEnabled = true
+            nameButton?.alpha = 1.0
+        } else {
+            nameButton?.isUserInteractionEnabled = false
+            nameButton?.alpha = 0.5
+        }
+        return true
     }
     
     // Masquer le clavier

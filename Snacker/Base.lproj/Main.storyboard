@@ -204,7 +204,7 @@
                         <viewLayoutGuide key="safeArea" id="Iur-vA-Art"/>
                     </view>
                     <connections>
-                        <outlet property="nameTextField" destination="ZAc-4C-1x1" id="R89-yN-m9p"/>
+                        <outlet property="nameButton" destination="y29-Mr-hn7" id="vcv-Fe-F9d"/>
                         <outlet property="textField" destination="ZAc-4C-1x1" id="Cz3-0R-K9M"/>
                         <segue destination="gdg-3z-yOH" kind="show" identifier="showMyNumber" id="frz-Ej-E8F"/>
                     </connections>
